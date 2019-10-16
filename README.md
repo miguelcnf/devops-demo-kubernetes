@@ -7,7 +7,7 @@
 
 #### Demo
 
-1. Install minikube: 
+1. Install minikube: https://kubernetes.io/docs/tasks/tools/install-minikube/
 2. Start minikube: `minikube start`
 3. Reuse Docker daemon: `$(minikube docker-env)`
 4. Build hello-world image: `docker build -t hello:latest .`
