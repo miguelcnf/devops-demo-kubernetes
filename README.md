@@ -9,7 +9,7 @@
 
 1. Install minikube: https://kubernetes.io/docs/tasks/tools/install-minikube/
 2. Start minikube: `minikube start`
-3. Reuse Docker daemon: `$(minikube docker-env)`
+3. Reuse Docker daemon: `eval $(minikube docker-env)`
 4. Build hello-world image: `docker build -t hello:latest .`
 5. Apply hello-world deployment: `kubectl -f deployment.yml`
 6. Expose hello-world service: `kubectl expose deployment hello-world --type=LoadBalancer --port=8080
